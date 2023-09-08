@@ -1,0 +1,23 @@
+package Pattern;
+
+public class No {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n=5;//char k='a';
+		for(int i=0;i<n;i++) {
+			char k='A';
+			for(int j=0;j<n;j++) {
+				if(i>=j&&i+j<=n-1||i<=j&&i+j>=n-1) {
+					System.out.print(k++%2 +" ");
+				}
+				else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println(" ");
+	}
+
+	}
+
+}
